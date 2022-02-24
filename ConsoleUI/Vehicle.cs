@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleUI
 {
-    public abstract class Vehicles
+    public abstract class Vehicle
     {
         string Year;
         string Make;
