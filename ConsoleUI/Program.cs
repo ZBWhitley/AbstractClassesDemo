@@ -12,19 +12,31 @@ namespace ConsoleUI
         {
             var vehicles = new List<Vehicle>();
 
-            var c1 = new Car 
-            {
-                c1.
-            }
-            
-            var m1 = new Motorcycle();
-            Vehicle c2 = new Car();
-            Vehicle m2 = new Motorcycle();
+            var c1 = new Car();
+            c1.Year = 2003;
+            c1.Make = "Subaru";
+            c1.Model = "WRX";
+            vehicles.Add(c1);
 
-            vehicles.Add(c1);           
+            var m1 = new Motorcycle();
+            m1.Year = 2022;
+            m1.Make = "Suzuki";
+            m1.Model = "Hayabusa";
             vehicles.Add(m1);
+
+            Vehicle c2 = new Car();
+            c2.Year = 2013;
+            c2.Make = "Hyundai";
+            c2.Model = "Sonata";
             vehicles.Add(c2);
+
+            Vehicle m2 = new Motorcycle();
+            m2.Year = 2015;
+            m2.Make = "Suzuki";
+            m2.Model = "GSX-R";
             vehicles.Add(m2);
+
+
             /*
              * Todo follow all comments!! 
              */
@@ -61,7 +73,7 @@ namespace ConsoleUI
 
             // Call each of the drive methods for one car and one motorcycle
 
-            #endregion            
+            #endregion
             Console.ReadLine();
         }
     }
