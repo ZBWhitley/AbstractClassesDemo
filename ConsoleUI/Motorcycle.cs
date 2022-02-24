@@ -8,7 +8,12 @@ namespace ConsoleUI
     {
         public override void DriveAbstract()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Does drive");
+        }        
+        bool HasSideCar;
+        public override void DriveVirtual()
+        {
+            base.DriveVirtual();
         }
     }
 }

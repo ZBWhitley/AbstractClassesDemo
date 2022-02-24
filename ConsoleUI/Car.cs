@@ -8,7 +8,8 @@ namespace ConsoleUI
     {
         public override void DriveAbstract()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Does drive");
         }
+        public bool HasTrunk();
     }
 }

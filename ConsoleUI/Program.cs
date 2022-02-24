@@ -10,6 +10,21 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            var vehicles = new List<Vehicle>();
+
+            var c1 = new Car 
+            {
+                c1.
+            }
+            
+            var m1 = new Motorcycle();
+            Vehicle c2 = new Car();
+            Vehicle m2 = new Motorcycle();
+
+            vehicles.Add(c1);           
+            vehicles.Add(m1);
+            vehicles.Add(c2);
+            vehicles.Add(m2);
             /*
              * Todo follow all comments!! 
              */
