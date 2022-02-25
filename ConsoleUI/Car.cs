@@ -4,12 +4,16 @@ using System.Text;
 
 namespace ConsoleUI
 {
-    internal class Car : Vehicle
+    public class Car : Vehicle
     {
-        public override void DriveAbstract()
+        public override void DriveAbstract() { }
+        public override void DriveVirtual()
         {
-            Console.WriteLine("Does drive");
+            Console.WriteLine("This car is operational.");
         }
-        public bool HasTrunk();
+
+               
+
+        public bool HasTrunk { get; set; }
     }
 }

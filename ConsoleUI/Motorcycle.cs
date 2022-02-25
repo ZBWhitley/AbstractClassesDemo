@@ -4,16 +4,14 @@ using System.Text;
 
 namespace ConsoleUI
 {
-    internal class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle
     {
-        public override void DriveAbstract()
-        {
-            Console.WriteLine("Does drive");
-        }        
-        bool HasSideCar;
+        public override void DriveAbstract(){}       
+        
         public override void DriveVirtual()
         {
-            base.DriveVirtual();
+            Console.WriteLine("This motorcycle is not operational.");
         }
+        public bool HasSideCar { get; set; }
     }
 }

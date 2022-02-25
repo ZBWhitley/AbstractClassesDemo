@@ -16,25 +16,37 @@ namespace ConsoleUI
             c1.Year = 2003;
             c1.Make = "Subaru";
             c1.Model = "WRX";
-            vehicles.Add(c1);
+            c1.HasTrunk = true;            
+            vehicles.Add(c1);            
 
             var m1 = new Motorcycle();
             m1.Year = 2022;
             m1.Make = "Suzuki";
             m1.Model = "Hayabusa";
+            m1.HasSideCar = false;
             vehicles.Add(m1);
 
-            Vehicle c2 = new Car();
+            var c2 = new Car();
             c2.Year = 2013;
             c2.Make = "Hyundai";
             c2.Model = "Sonata";
+            c2.HasTrunk = true;
             vehicles.Add(c2);
 
-            Vehicle m2 = new Motorcycle();
+            var m2 = new Motorcycle();
             m2.Year = 2015;
             m2.Make = "Suzuki";
             m2.Model = "GSX-R";
+            m2.HasSideCar = false;
             vehicles.Add(m2);
+
+            foreach (var vehicle in vehicles) 
+            {
+                Console.WriteLine($"Year: {vehicle.Year} Make: {vehicle.Make} Model: {vehicle.Model}");
+                vehicle.DriveVirtual();
+                Console.WriteLine();
+            }
+
 
 
             /*
@@ -73,8 +85,7 @@ namespace ConsoleUI
 
             // Call each of the drive methods for one car and one motorcycle
 
-            #endregion
-            Console.ReadLine();
+            #endregion            
         }
     }
 }

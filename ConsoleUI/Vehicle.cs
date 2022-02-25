@@ -13,7 +13,7 @@ namespace ConsoleUI
         public abstract void DriveAbstract();
         public virtual void DriveVirtual() 
         {
-            Console.WriteLine();
+            Console.WriteLine("This vehicle is operational.");
         }
     }
 }
