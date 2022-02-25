@@ -10,9 +10,7 @@ namespace ConsoleUI
         public override void DriveVirtual()
         {
             Console.WriteLine("This car is operational.");
-        }
-
-               
+        }              
 
         public bool HasTrunk { get; set; }
     }

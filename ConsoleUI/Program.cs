@@ -26,18 +26,18 @@ namespace ConsoleUI
             m1.HasSideCar = false;
             vehicles.Add(m1);
 
-            var c2 = new Car();
-            c2.Year = 2013;
-            c2.Make = "Hyundai";
-            c2.Model = "Sonata";
-            c2.HasTrunk = true;
+            Vehicle c2 = new Car() {Year = 2013, Make = "Hyundai", Model = "Sonata", HasTrunk = true};
+            //c2.Year = 2013;
+            //c2.Make = "Hyundai";
+            //c2.Model = "Sonata";
+            //c2.HasTrunk = true;
             vehicles.Add(c2);
 
-            var m2 = new Motorcycle();
-            m2.Year = 2015;
-            m2.Make = "Suzuki";
-            m2.Model = "GSX-R";
-            m2.HasSideCar = false;
+            Vehicle m2 = new Motorcycle() {Year = 2015, Make = "Suzuki", Model = "GSX-R", HasSideCar = false};
+            //m2.Year = 2015;
+            //m2.Make = "Suzuki";
+            //m2.Model = "GSX-R";
+            //m2.HasSideCar = false;
             vehicles.Add(m2);
 
             foreach (var vehicle in vehicles) 
